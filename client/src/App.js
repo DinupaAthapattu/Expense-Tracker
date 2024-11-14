@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -7,6 +9,11 @@ import Dashboard from './pages/Dashboard'; // Placeholder for Dashboard
 import Expenses from './pages/Expenses';   // Placeholder for Expense tracker page
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
+import AddExpense from './components/AddExpense';
+import { Toaster } from 'react-hot-toast'; // Import Toaster from react-hot-toast
+import ExpenseList from './components/ExpenseList'
+import StatChart from "./components/StatChart"
+import HeroPage from "./components/HeroPage"
 
 const theme = createTheme({
   palette: {
@@ -25,7 +32,13 @@ function App() {
       <CssBaseline />
       <Router>
         <Navbar />
+        {/* Add the Toaster here */}
+        <Toaster position="top-center" reverseOrder={false} /> {/* Customize position */}
         <Routes>
+          <Route path='expenselist' element={<ExpenseList />} />
+          <Route path='heropage' element={<HeroPage />} />
+          <Route path='statchart' element={<StatChart />} />
+          <Route path='addexpense' element={<AddExpense />} />
           <Route path="/register" element={<SignIn />} />
           <Route path="/" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
