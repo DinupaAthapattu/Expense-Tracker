@@ -36,11 +36,11 @@ function App() {
         <Toaster position="top-center" reverseOrder={false} /> {/* Customize position */}
         <Routes>
           <Route path='expenselist' element={<ExpenseList />} />
-          <Route path='heropage' element={<HeroPage />} />
+          <Route path='/' element={<HeroPage />} />
           <Route path='statchart' element={<StatChart />} />
           <Route path='addexpense' element={<AddExpense />} />
           <Route path="/register" element={<SignIn />} />
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/expenses" element={<Expenses />} />
         </Routes>

@@ -124,7 +124,7 @@ const Navbar = () => {
                 Home
               </Link>
             </Button>
-            <Button
+            {/* <Button
               sx={{
                 color: 'white',
                 fontWeight: 600,
@@ -139,8 +139,8 @@ const Navbar = () => {
               <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>
                 About
               </Link>
-            </Button>
-            <Button
+            </Button> */}
+            {/* <Button
               sx={{
                 color: 'white',
                 fontWeight: 600,
@@ -155,7 +155,7 @@ const Navbar = () => {
               <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>
                 Contact
               </Link>
-            </Button>
+            </Button> */}
 
             {/* Conditional Render for Log In / Log Out Button */}
             {isLoggedIn ? (
@@ -187,7 +187,7 @@ const Navbar = () => {
                   marginLeft: 3,
                 }}
               >
-                <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+                <Link to="/login" style={{ textDecoration: 'none', color: 'white' }}>
                   Log In
                 </Link>
               </Button>
