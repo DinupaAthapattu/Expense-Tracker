@@ -564,7 +564,7 @@ const Dashboard = () => {
           View All Expenses
         </Button>
 
-        {/* Logout Button */}
+        {/* Logout Button
         <Button
           variant="contained"
           color="secondary"
@@ -585,7 +585,7 @@ const Dashboard = () => {
           }}
         >
           Logout
-        </Button>
+        </Button> */}
       </Box>
 
       {/* Add Expense Dialog */}
